@@ -1,12 +1,18 @@
-import * as React from 'react';
+import { Link } from 'react-router-dom';
 
 export const Navigation = () => {
 	return (
 		<nav>
 			<ul className='flex'>
-				<li className='mr-2'>Home</li>
-				<li className='mr-2'>About</li>
-				<li className='mr-2'>Contact</li>
+				<Link className='mr-2' to='/'>
+					Home
+				</Link>
+				<Link className='mr-2' to='/about'>
+					About
+				</Link>
+				<Link className='mr-2' to='/contact'>
+					Contact
+				</Link>
 			</ul>
 		</nav>
 	);
